@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  height: 600px;
+  grid-template-columns: [KW] auto [Montag] 1fr [Dienstag] 1fr [Mittwoch] 1fr [Donnerstag] 1fr [Freitag] 1fr;
+  /* grid-template-columns: auto repeat(5, 1fr); */
+  grid-template-rows: [head] 40px [kw1] 1fr [kw2] 1fr [kw3] 1fr [kw4] 1fr [kw5] 1fr;
+}
+
+.item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  text-align: center;
+  padding: 1px;
+}
+
+.shift {
+  font-size: 15px;
+  border: rgba(0, 0, 0, 0.1) solid;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px;
+  color: black;
+  z-index: 3;
+}
+
+.workers {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+.gridRow {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-auto-flow: "row"; /* or 'row', 'row dense', 'column dense' */
+}
+
+.item:hover {
+  background-color: darkgrey;
+}
+.shift:hover {
+  background-color: darkgrey;
+}
+.buttonPannelBottom {
+  position: fixed;
+  bottom: 5%;
+  left: 40%;
+  z-index: 4;
+}
+.highlightToday {
+  border: 2px solid black;
+}

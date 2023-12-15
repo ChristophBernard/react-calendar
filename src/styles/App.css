@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+.App-header {
+  min-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: black;
+  border: black 1px solid;
+}
+.pHeader {
+  position: relative;
+}
+.roleSelection {
+  position: absolute;
+  left: 0;
+}
